@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+.contanier{
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.card{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+.content, .image{
+    width: 250px;
+    height: 370px;
+    background-color: white;
+}
+.content{
+    /* border: 1px solid black; */
+    padding: 25px;
+    border-top-right-radius: 4%;
+    border-bottom-right-radius: 4%;
+}
+.image{
+    background: url(images/image-product-desktop.jpg) no-repeat top center;
+    background-size:contain ;
+    border-top-left-radius: 4%;
+    border-bottom-left-radius: 4%;
+}
+
+h1, h2, h3, p{
+    margin-bottom: 19px;
+}
+h3{
+    display: block;
+    color: hsl(228, 12%, 48%);
+    font: 100 11px 'Montserrat',sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+h1{
+    font: 700 33px 'Fraunces';
+    line-height: 27px;
+    color: #20292f;
+}
+p{
+    font: 500 12px sans-serif;
+    text-transform: capitalize;
+    color: #898a90;
+    line-height: 20px;
+
+}
+h2{
+    display: inline-block;
+    color: #40876f;
+    font-family: 'Outfit';
+    font-weight: 700;
+}
+h5{
+    display: inline-block;
+    color: #9696a0;
+    text-decoration: line-through;
+    margin-left: 10px;
+    vertical-align: 4px;
+}
+button{
+    font: 500 18px 'Outfit';
+    background-color: #3d8168;
+    /* box-shadow: 0 9px  9px 0 black; */
+    border: 0;
+    color: white;
+    border-radius: 8px;
+    width: 100%;
+    min-height: 40px;
+}
+button:hover{
+    background-color:#1a4031;
+}
+i{
+    padding: 0 10px 0 0;
+}
+@media(max-width: 767px){
+    .card{
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .content{
+        width: 100%;
+        height: 380px;
+        background-color: white;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 4%;
+        border-bottom-left-radius: 4%;
+    }
+    .image{
+        background: url(images/image-product-mobile.jpg)no-repeat top center;
+        background-size: cover ;
+        width: 100%;
+        height: 30vh;
+        border-top-left-radius: 4%;
+        border-top-right-radius: 4%;
+        border-bottom-left-radius: 0;
+    }
+    h1, h2, h3, p{
+        margin-bottom: 32px;
+    }
+    button{
+        width: 100%;
+    }
+}
